@@ -39,7 +39,7 @@ body {
     letter-spacing: -0.5px;
 }
 
-/* LINKS DEL MENÚ */
+/* LINKS DEL MENÚ (ESCRITORIO) */
 .linksmenu {
     display: flex;
     gap: 30px;
@@ -253,12 +253,10 @@ body {
 /* RESPONSIVE */
 @media (max-width: 768px) {
 
-    /* Mostrar botón ☰ */
     .desplegable {
         display: block;
     }
 
-    /* Ocultar menú por defecto */
     .linksmenu {
         display: none;
         flex-direction: column;
@@ -272,12 +270,10 @@ body {
         box-shadow: 0 4px 14px rgba(0,0,0,0.08);
     }
 
-    /* Mostrar menú cuando se activa */
     .linksmenu.active {
         display: flex;
     }
 
-    /* Espaciado entre enlaces */
     .linksmenu a {
         padding: 12px 0;
         margin: 0;
