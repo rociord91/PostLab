@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --azul-oscuro: #0a1a33;
+    --azul-acento: #1e90ff;
+    --gris-fondo: #f4f7fb;
+    --gris-medio: #d9d9d9;
+    --blanco: #ffffff;
+}
+
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--gris-fondo);
+    color: var(--azul-oscuro);
+    line-height: 1.6;
+}
+
+/* MENÚ */
+.menu {
+    background: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+.desplegable {
+    display: none;
+}
+.logo h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--azul-oscuro);
+    letter-spacing: -0.5px;
+}
+
+.linksmenu a {
+    text-decoration: none;
+    color: var(--azul-oscuro);
+    font-weight: 600;
+    margin-left: 30px;
+    transition: 0.25s ease;
+}
+
+.linksmenu a:hover {
+    color: var(--azul-acento);
+    transform: translateY(-2px);
+}
+
+/* HERO */
+.hero {
+    padding: 180px 10% 140px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 750px;
+    margin: 0 auto 40px;
+    opacity: 0.85;
+}
+
+/* BOTÓN PRINCIPAL */
+.botonprincipal {
+    display: inline-block;
+    padding: 16px 45px;
+    background-color: var(--azul-acento);
+    color: var(--blanco);
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 14px rgba(30,144,255,0.25);
+}
+
+.botonprincipal:hover {
+    background-color: var(--azul-oscuro);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* INFO */
+.info {
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.info p {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    opacity: 0.85;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 35px;
+}
+
+.info li {
+    font-size: 18px;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 28px;
+}
+
+.info li::before {
+    position: absolute;
+    left: 0;
+    color: var(--azul-acento);
+    font-size: 28px;
+    line-height: 0;
+}
+
+/* COMING SOON */
+.comingsoon {
+    padding: 90px 10%;
+    text-align: center;
+    background: var(--blanco);
+    border-top: 1px solid var(--gris-medio);
+}
+
+.comingsoon h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.comingsoon p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    opacity: 0.85;
+}
+
+/* BOTÓN SECUNDARIO */
+.botonsecundario {
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    border-radius: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.botonsecundario:hover {
+    background-color: var(--azul-acento);
+    transform: translateY(-3px);
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 25px;
+    background: var(--blanco);
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 60px;
+}
+
+
+/*CONTACTO*/
+/* CONTACTO */
+.contacto-hero {
+    padding: 160px 10% 80px;
+    text-align: center;
+}
+
+.contacto-hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: var(--azul-oscuro);
+}
+
+.contacto-hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.85;
+}
+
+.contacto-formulario {
+    padding: 60px 10%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contacto-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacto-formulario label {
+    font-weight: 600;
+    color: var(--azul-oscuro);
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+}
+
+.contacto-formulario input:focus,
+.contacto-formulario textarea:focus {
+    outline: none;
+    border-color: var(--azul-acento);
+    box-shadow: 0 0 6px rgba(30,144,255,0.3);
+}

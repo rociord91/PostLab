@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | PostLab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="menu">
+    <div class="logo">
+        <h2>PostLab</h2>
+    </div>
+
+    <button class="desplegable" onclick="toggleMenu()">☰</button>
+
+    <nav class="linksmenu" id="menuLinks">
+        <a href="index.html">Inicio</a>
+        <!--<a href="postlab.html">PostLab</a> PENDIENTE-->
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="contacto-hero">
+    <h1>Contacto</h1>
+    <p>¿Tienes una idea, un proyecto o una consulta? <br>Estoy aquí para ayudarte.</p>
+</section>
+
+<section class="contacto-formulario">
+    <form action="https://formsubmit.co/rocio.rr.1991@gmail.com" method="POST"> 
+        
+        <label>Nombre</label>
+        <input type="text" name="nombre" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Mensaje</label>
+        <textarea name="mensaje" rows="6" required></textarea>
+
+        <button type="submit" class="botonprincipal">Enviar mensaje</button>
+    </form>
+</section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 PostLab. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menuLinks").classList.toggle("active");
+}
+</script>
+    <script src="contacto.js"></script>
+
+</body>
+</html>

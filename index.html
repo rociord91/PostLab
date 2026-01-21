@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostLab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="menu">
+    <div class="logo">
+        <h2>PostLab</h2>
+    </div>
+
+    <button class="desplegable" onclick="toggleMenu()">☰</button>
+
+    <nav class="linksmenu" id="menuLinks">
+        <a href="index.html">Inicio</a>
+        <!--<a href="postlab.html">PostLab</a> no definida aún-->
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Bienvenido a PostLab</h1>
+    <p>Un espacio dedicado a la experimentación, la creatividad y el desarrollo de ideas digitales.  
+       Estamos construyendo algo nuevo y pronto podrás explorarlo.</p>
+
+    <a href="contacto.html" class="botonprincipal">Notificarme cuando esté listo</a>
+</section>
+
+<!-- BLOQUE DE INFORMACIÓN -->
+<section class="info">
+    <h2>¿Qué es PostLab?</h2>
+    <p>
+        PostLab será un laboratorio digital donde podrás encontrar proyectos, recursos, artículos,
+        experimentos y herramientas creadas para aprender, explorar y crear.
+    </p>
+
+    <ul>
+        <li>Proyectos en desarrollo</li>
+        <li>Artículos y guías prácticas</li>
+        <li>Recursos descargables</li>
+        <li>Experimentos y prototipos</li>
+    </ul>
+</section>
+
+<!-- BLOQUE FINAL -->
+<section class="comingsoon">
+    <h2>Estamos trabajando en ello</h2>
+    <p>Esta página es solo un adelanto. Muy pronto podrás descubrir todo lo que estamos preparando.</p>
+
+    <a href="contacto.html" class="botonsecundario">Contactar</a>
+</section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 PostLab. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menuLinks").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
