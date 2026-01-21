@@ -55,7 +55,8 @@ body {
     transform: translateY(-2px);
 }
 .linksmenu {
-    margin-right: 40px; /* Ajusta el valor a tu gusto */
+    margin-right: 40px; 
+    padding-right: 60px;
 }
 
 
@@ -240,4 +241,5 @@ body {
     border-color: var(--azul-acento);
     box-shadow: 0 0 6px rgba(30,144,255,0.3);
 }
+
 
